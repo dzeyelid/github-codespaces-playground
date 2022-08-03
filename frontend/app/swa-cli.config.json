@@ -9,6 +9,15 @@
       "apiBuildCommand": "npm run build --if-present",
       "run": "npm run dev",
       "appDevserverUrl": "http://localhost:5173"
+    },
+    "dev:debug": {
+      "appLocation": ".",
+      "apiLocation": "http://localhost:7071",
+      "outputLocation": "dist",
+      "appBuildCommand": "npm run build",
+      "apiBuildCommand": "npm run build --if-present",
+      "run": "npm run dev",
+      "appDevserverUrl": "http://localhost:5173"
     }
   }
 }
