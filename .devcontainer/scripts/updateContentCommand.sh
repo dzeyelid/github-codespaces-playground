@@ -13,5 +13,8 @@ if [ -d "app/api" ]; then
 pushd app/api
 npm install
 npm run build
+if [ ! -e "local.settings.json" ]; then
+cp local.settings.development.json local.settings.json
+fi
 popd
 fi
