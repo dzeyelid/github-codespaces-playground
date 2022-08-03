@@ -15,7 +15,8 @@
 	"extensions": [
 		"marp-team.marp-vscode",
 		"ms-azuretools.vscode-azurefunctions",
-		"ms-azuretools.vscode-azurestaticwebapps"
+		"ms-azuretools.vscode-azurestaticwebapps",
+		"Vue.volar"
 	],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
