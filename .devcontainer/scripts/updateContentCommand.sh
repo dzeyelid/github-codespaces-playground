@@ -12,5 +12,6 @@ fi
 if [ -d "app/api" ]; then
 pushd app/api
 npm install
+npm run build
 popd
 fi
