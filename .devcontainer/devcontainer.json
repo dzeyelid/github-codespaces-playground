@@ -12,6 +12,12 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
+	"extensions": [
+		"marp-team.marp-vscode",
+		"ms-azuretools.vscode-azurefunctions",
+		"ms-azuretools.vscode-azurestaticwebapps"
+	],
+
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "uname -a",
 	"onCreateCommand": "bash ./.devcontainer/scripts/onCreateCommand.sh",
