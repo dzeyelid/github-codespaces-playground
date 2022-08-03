@@ -8,4 +8,8 @@ FROM mcr.microsoft.com/vscode/devcontainers/base:0-${VARIANT}
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
-
+RUN wget -q https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb \
+  && dpkg -i packages-microsoft-prod.deb \
+  && apt-get update \
+  && apt-get install azure-functions-core-tools-4 \
+  && rm -rf /var/lib/apt/lists/*
